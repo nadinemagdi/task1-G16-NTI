@@ -1,73 +1,109 @@
-<html>
-<head>
-<title>MISR TRAVELS</title>
-</head>
-<body bgcolor="#000033" text="#FFFFFF" link="#FFFF00" vlink="#FFFF00" alink="#FFFF00">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Appointment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="doctor-image">
+        <img src="img/doctor.jpg" alt="Doctor" />
+      </div>
 
-<h1 align="center" title="MISR TRAVELS"><b><font color="#B5A642">MISR TRAVELS</font></b></h1>
+      <div class="form-panel">
+        <h1>Doctor Appointment Form</h1>
+        <div class="divider"></div>
 
-<p align="center">Explore our amazing Egyptian destinations and enjoy unforgettable experiences.</p>
+        <form>
+          <div class="row">
+            <label for="appt-date">Appointment<br />Date</label>
+            <div class="field-wrap">
+              <input id="appt-date" type="text" placeholder="mm/dd/yyyy" />
+              <span class="date-icon">📅</span>
+            </div>
+          </div>
 
-<table width="90%" border="3" bordercolor="#B5A642" cellspacing="4" cellpadding="6" align="center" bgcolor="#1F4E79">
+          <div class="row">
+            <label for="appt-time">Appointment<br />Time</label>
+            <div class="field-wrap">
+              <input id="appt-time" type="text" placeholder="--:-- --" />
+              <span class="time-icon">🕒</span>
+            </div>
+          </div>
 
-<tr>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Sharm El Sheikh</strong><br>
-It is in South Sinai. Visitors can enjoy the Red Sea beaches, diving, and colorful coral reefs.<br>
-This is a perfect place for a relaxing and fun holiday.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/sharm.jpg" alt="Sharm El Sheikh beach" width="100%" height="160" border="2" title="Sharm El Sheikh">
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Luxor</strong><br>
-It is in Upper Egypt. Tourists can visit temples, tombs, and the beautiful Nile River.<br>
-Luxor is one of the best places to discover ancient Egyptian history.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/luxor.jpg" alt="Luxor temple" width="100%" height="160" border="2" title="Luxor">
-</td>
-</tr>
+          <div class="row">
+            <label>Name</label>
+            <div class="split">
+              <input type="text" placeholder="First" />
+              <input type="text" placeholder="Last" />
+            </div>
+          </div>
 
-<tr>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Giza Pyramids</strong><br>
-They are in Giza near Cairo. Visitors can see the Great Pyramids and the Sphinx.<br>
-This place is famous for the wonders of ancient Egypt.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/giza.jpg" alt="Giza Pyramids" width="100%" height="160" border="2" title="Giza Pyramids">
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Cairo</strong><br>
-It is the capital city of Egypt. People can visit museums, markets, and historical monuments.<br>
-Cairo is full of culture, history, and busy city life.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/cairo.jpg" alt="Cairo city" width="100%" height="160" border="2" title="Cairo">
-</td>
-</tr>
+          <div class="row gender-row">
+            <label>Gender</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="gender" />
+                <span>Male</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" checked />
+                <span>Female</span>
+              </label>
+            </div>
+          </div>
 
-<tr>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Nile Cruise</strong><br>
-It is on the River Nile in Egypt. Guests can enjoy a beautiful trip and see many cities and villages.<br>
-A Nile cruise gives visitors a relaxing and scenic experience.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/nile.jpg" alt="Nile cruise" width="100%" height="160" border="2" title="Nile Cruise">
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<p><strong>Abu Simbel</strong><br>
-It is in southern Egypt near Lake Nasser. Visitors can see the great temples of Ramses II.<br>
-Abu Simbel is a wonderful place for unforgettable historical sightseeing.</p>
-</td>
-<td width="25%" bgcolor="#1F4E79" valign="top" align="left">
-<img src="images/abusimbel.jpg" alt="Abu Simbel temple" width="100%" height="160" border="2" title="Abu Simbel">
-</td>
-</tr>
+          <div class="row">
+            <label for="phone">Phone</label>
+            <div class="field-wrap single-field">
+              <input id="phone" type="text" placeholder="#####" />
+            </div>
+          </div>
 
-</table>
+          <div class="row">
+            <label>Address</label>
+            <div class="split">
+              <input type="text" placeholder="city" />
+              <input type="text" placeholder="state" />
+            </div>
+          </div>
 
-</body>
+          <div class="row textarea-row">
+            <label for="query">Your Query</label>
+            <div class="field-wrap single-field">
+              <textarea id="query"></textarea>
+            </div>
+          </div>
+
+          <div class="row options-row">
+            <label>Appointment<br />Type</label>
+            <div class="check-list">
+              <label class="check-item">
+                <input type="checkbox" checked />
+                <span>Cervix checkup</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" checked />
+                <span>Heart checkup</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" />
+                <span>Eye check-up</span>
+              </label>
+              <label class="check-item">
+                <input type="checkbox" />
+                <span>Hearing Test</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
